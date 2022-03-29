@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Андрей Куприков](https://up.htmlacademy.ru/adaptive/25/user/2025351).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Доровлев](https://htmlacademy.ru/profile/dorovlev).
 
 ---
 
