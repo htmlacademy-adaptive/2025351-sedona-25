@@ -1,0 +1,136 @@
+.modal-form {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal-form__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background-color: $white;
+  text-align: center;
+
+  &--success {
+    @media (min-width: $tablet-width) {
+      width: 640px;
+    }
+  }
+
+  &--failure {
+    @media (min-width: $tablet-width) {
+      width: 400px;
+    }
+  }
+}
+
+.modal-form__top {
+  padding: 27px 20px 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  &--failure {
+    padding-top: 19px;
+    padding-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 30px 60px 15px;
+    }
+  }
+}
+
+.modal-form__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 29px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.modal-form__text {
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &--success,
+  &--failure {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  &--failure {
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.modal-form__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  &--failure {
+    padding-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 15px;
+      padding-bottom: 52px;
+    }
+  }
+}
+
+.modal-form__button {
+  margin: 0 auto;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  &--success {
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 460px;
+    }
+  }
+
+  &--failure {
+    width: 180px;
+
+    @media (min-width: $tablet-width) {
+      width: 270px;
+    }
+  }
+}

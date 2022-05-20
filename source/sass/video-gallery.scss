@@ -1,0 +1,41 @@
+//.video-gallery {
+//  position: relative;
+//}
+
+.video-gallery__video {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 800px;
+  }
+}
+
+.video-gallery__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-gallery__play-button {
+  position: absolute;
+  top: calc(50% - 55px / 2);
+  left: calc(50% - 48px / 2);
+  cursor: pointer;
+}
+
+.video-gallery__play-button-icon {
+  fill: white;
+  fill-opacity: .7;
+
+  :hover {
+    fill-opacity: .9;
+  }
+}
