@@ -1,0 +1,8 @@
+.sight-group {
+  padding: 0 6.5%;
+  background-color: $bg-color-map;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

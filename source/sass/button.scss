@@ -1,0 +1,37 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 13px 10px;
+  border: 3px solid $bg-color-button;
+  font: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  color: $font-color-secondary;
+  line-height: 26px;
+  text-align: center;
+  text-transform: inherit;
+  text-decoration: none;
+  background-color: $bg-color-button;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $bg-color-button--hover;
+    background-color: $bg-color-button--hover;
+  }
+
+  &:active {
+    color: fade($font-color-secondary, 30%);
+    border-color: $bg-color-button--active;
+    background-color: $bg-color-button--active;
+  }
+
+  &:focus {
+    border-color: $bg-color-button--hover;
+    outline: 0;
+  }
+
+  &:disabled {
+    border-color: $bg-color-button--disabled;
+    background-color: $bg-color-button--disabled;
+  }
+}

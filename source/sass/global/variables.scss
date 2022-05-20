@@ -1,0 +1,37 @@
+// Viewports
+$mobile-width-only: 767px;
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+// Fonts
+$font-family-base: "PT Sans", "Arial", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 21px;
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+
+$border-color-item: #d6d6d6;
+$border-color-photo: #e5e5e5;
+
+$bg-color-button: #81b3d2;
+$bg-color-button--hover: #669ec0;
+$bg-color-button--active: #5496bd;
+$bg-color-button--disabled: $border-color-photo;
+
+$bg-color-body: #f2f2f2;
+$bg-color-hero: #a6d2ed;
+$bg-color-sight: #af8766;
+$bg-color-map: #eeeeee;
+$bg-color-video-icon: #5c6870;
+$bg-color-photo: #eaeaea;
+$bg-color-checkbox--active: #d5d5d5;
+$bg-color-striked: #dbdbdb;
+
+$font-color-base: #333333;
+$font-color-secondary: $white;
+$font-color-heading: $black;
+$font-color-item--active: #766357;
+$font-color-link--active: #b3b3b3;

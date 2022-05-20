@@ -1,0 +1,116 @@
+.photo {
+  position: relative;
+  padding: 22px 6.25% 21px;
+  border-bottom: 1px solid $border-color-photo;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 50%;
+    border-bottom: none;
+    background-color: $bg-color-body;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33.33%;
+  }
+
+  &:nth-of-type(odd):not(:first-of-type) {
+    @media (min-width: $tablet-width) {
+      background-color: $bg-color-photo;
+    }
+  }
+
+  &--full {
+    border-top: 1px solid $border-color-photo;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+}
+
+.photo__link {
+  display: block;
+}
+
+.photo__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.photo__information {
+  padding-top: 15px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    color: $font-color-secondary;
+    background-color: rgba($black, 30%);
+  }
+}
+
+.photo__description {
+  @media (min-width: $tablet-width) {
+    max-width: 75%;
+  }
+}
+
+.photo__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: $font-color-heading;
+
+  @media (min-width: $desktop-width) {
+    color: $font-color-secondary;
+  }
+}
+
+.photo__author {
+  margin: 0;
+  text-transform: none;
+}
+
+.photo__likes {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    width: 65px;
+  }
+}
+
+.photo__like-count {
+  align-self: flex-end;
+  margin-left: 13px;
+  font-weight: 700;
+  color: $font-color-heading;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    align-self: auto;
+    margin-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $font-color-secondary;
+  }
+}
