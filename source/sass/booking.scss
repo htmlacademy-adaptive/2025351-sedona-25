@@ -1,0 +1,49 @@
+.booking {
+  margin: 0 auto;
+  padding: 28px 6.25% 49px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 0 58px;
+    max-width: 458px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
+}
+
+.booking__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $font-color-heading;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.booking__text {
+  margin-top: 19px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+}
+
+.booking__find-btn {
+  width: 100%;
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
+  }
+}
+

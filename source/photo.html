@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <title>HTML Academy: Седона - Фото и Видео</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body class="page__body">
+<div class="page-wrapper">
+  <header class="main-header">
+    <a class="main-header__logo" href="/">
+      <picture>
+        <source type="image/webp" srcset="img/logo-sedona.webp 1x, img/logo-sedona@2x.webp 2x">
+        <img src="img/logo-sedona.png" srcset="img/logo-sedona@2x.png 2x" alt="Седона Логотип">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--active"><a>Фото и видео</a></li>
+        <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-header__hero">
+      <img class="main-header__title-img" src="img/header-title-text.svg" width="229" height="39" alt="Заголовок Седона">
+    </div>
+  </header>
+
+  <main class="main-container">
+    <header class="main-container__header">
+      <h1 class="main-container__header-title">Фото и видео</h1>
+      <p class="main-container__header-text">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+    </header>
+
+    <section class="main-container__photo-gallery">
+      <h2 class="visually-hidden">Галерея фотографий</h2>
+
+      <article class="photo photo--full">
+        <a class="photo__link photo__link--full" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/non-native-space-desktop.webp 1x, img/photo/non-native-space-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/non-native-space-tablet.webp 1x, img/photo/non-native-space-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo/non-native-space-mobile.webp 1x, img/photo/non-native-space-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/photo/non-native-space-desktop.png 1x, img/photo/non-native-space-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/photo/non-native-space-tablet.png 1x, img/photo/non-native-space-tablet@2x.png 2x">
+            <img class="photo__image" src="img/photo/non-native-space-mobile.png" srcset="img/photo/non-native-space-mobile@2x.png 2x" alt="Неродные просторы - фото">
+          </picture>
+        </a>
+
+        <div class="photo__information photo__information--full">
+          <div class="photo__description">
+            <h3 class="photo__title">Неродные просторы</h3>
+            <p class="photo__author">Автор фото: Борис</p>
+          </div>
+
+          <div class="photo__likes">
+            <button class="button-like" type="button">
+              <span class="visually-hidden">Нравится!</span>
+              <svg class="button-like__icon" width="23" height="21" aria-label="Нравится">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+            </button>
+            <span class="photo__like-count">1350</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="photo">
+        <a class="photo__link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/local-flora-desktop.webp 1x, img/photo/local-flora-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/local-flora-tablet.webp 1x, img/photo/local-flora-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo/local-flora-mobile.webp 1x, img/photo/local-flora-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/photo/local-flora-desktop.png 1x, img/photo/local-flora-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/photo/local-flora-tablet.png 1x, img/photo/local-flora-tablet@2x.png 2x">
+            <img class="photo__image" src="img/photo/local-flora-mobile.png" srcset="img/photo/local-flora-mobile@2x.png 2x" alt="Местная растительность - фото">
+          </picture>
+        </a>
+
+        <div class="photo__information">
+          <div class="photo__description">
+            <h3 class="photo__title">Местная растительность</h3>
+            <p class="photo__author">Автор фото: Сергей</p>
+          </div>
+
+          <div class="photo__likes">
+            <button class="button-like" type="button">
+              <span class="visually-hidden">Нравится!</span>
+              <svg class="button-like__icon" width="23" height="21" aria-label="Нравится">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+            </button>
+            <span class="photo__like-count">143</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="photo">
+        <a class="photo__link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/north-way-desktop.webp 1x, img/photo/north-way-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/north-way-tablet.webp 1x, img/photo/north-way-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo/north-way-mobile.webp 1x, img/photo/north-way-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/photo/north-way-desktop.png 1x, img/photo/north-way-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/photo/north-way-tablet.png 1x, img/photo/north-way-tablet@2x.png 2x">
+            <img class="photo__image" src="img/photo/north-way-mobile.png" srcset="img/photo/north-way-mobile@2x.png 2x" alt="Дорога на север - фото">
+          </picture>
+        </a>
+
+        <div class="photo__information">
+          <div class="photo__description">
+            <h3 class="photo__title">Дорога на север</h3>
+            <p class="photo__author">Автор фото: Петр</p>
+          </div>
+
+          <div class="photo__likes">
+            <button class="button-like" type="button">
+              <span class="visually-hidden">Нравится!</span>
+              <svg class="button-like__icon" width="23" height="21" aria-label="Нравится">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+            </button>
+            <span class="photo__like-count">96</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="photo">
+        <a class="photo__link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/devil-bridge-desktop.webp 1x, img/photo/devil-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/devil-bridge-tablet.webp 1x, img/photo/devil-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo/devil-bridge-mobile.webp 1x, img/photo/devil-bridge-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/photo/devil-bridge-desktop.png 1x, img/photo/devil-bridge-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/photo/devil-bridge-tablet.png 1x, img/photo/devil-bridge-tablet@2x.png 2x">
+            <img class="photo__image" src="img/photo/devil-bridge-mobile.png" srcset="img/photo/devil-bridge-mobile@2x.png 2x" alt="Мост дьявола - фото">
+          </picture>
+        </a>
+
+        <div class="photo__information">
+          <div class="photo__description">
+            <h3 class="photo__title">Мост дьявола</h3>
+            <p class="photo__author">Автор фото: Антон</p>
+          </div>
+
+          <div class="photo__likes">
+            <button class="button-like" type="button">
+              <span class="visually-hidden">Нравится!</span>
+              <svg class="button-like__icon" width="23" height="21" aria-label="Нравится">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+            </button>
+            <span class="photo__like-count">254</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="main-container__video-gallery video-gallery">
+      <header class="main-container__header main-container__header--video">
+        <h2 class="main-container__title">Все еще сомневаетесь?</h2>
+        <p class="main-container__text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они не подорожали в очередной раз!</p>
+      </header>
+
+      <article class="video-gallery__video">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/video-desktop.webp 1x, img/photo/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/video-tablet.webp 1x, img/photo/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo/video-mobile.webp 1x, img/photo/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/photo/video-desktop.png 1x, img/photo/video-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/photo/video-tablet.png 1x, img/photo/video-tablet@2x.png 2x">
+          <img class="video-gallery__image" src="img/photo/video-mobile.png" srcset="img/photo/video-mobile@2x.png 2x" alt="Мост дьявола">
+        </picture>
+        <a class="video-gallery__play-button">
+          <svg class="video-gallery__play-button-icon" width="48" height="55" aria-label="Включить видео">
+            <use xlink:href="img/sprite.svg#play-button"></use>
+          </svg>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="footer-container__hashtag">#visitSEDONA</div>
+
+    <div class="footer-container__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <svg width="24" height="24" aria-label="Мы в Вконтакте">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="20" height="14" aria-label="Мы в Ютубе">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <svg width="22" height="18" aria-label="Мы в Телеграме">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-container__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <b class="copyright__text">Разработано</b>
+        <svg class="copyright__icon" width="27" height="35" aria-label="HTML Academy">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
