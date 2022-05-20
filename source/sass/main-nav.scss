@@ -33,9 +33,9 @@
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba($bg-color-button, .3);
-  box-shadow: 0 8px 0 0 rgba($bg-color-button, .3),
-  0 16px 0 0 rgba($bg-color-button, .3);
+  background-color: rgba($bg-color-button, 0.3);
+  box-shadow: 0 8px 0 0 rgba($bg-color-button, 0.3),
+    0 16px 0 0 rgba($bg-color-button, 0.3);
 }
 
 @media (max-width: $mobile-width-only) {
@@ -115,7 +115,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: rgba($black, .3);
+    background-color: rgba($black, 0.3);
   }
 }
 
@@ -169,7 +169,7 @@
   }
 
   &:not(:last-child) {
-    border-bottom: 1px solid rgba(#010101, .2);
+    border-bottom: 1px solid rgba(#010101, 0.2);
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
@@ -186,17 +186,17 @@
   }
 
   &:not(&--active):active {
-    color: rgba($font-color-secondary, .3);
+    color: rgba($font-color-secondary, 0.3);
     background-color: $bg-color-button--active;
 
     @media (min-width: $tablet-width) {
-      color: rgba($font-color-heading, .3);
+      color: rgba($font-color-heading, 0.3);
       background-color: transparent;
     }
   }
 
   &--active {
-    color: rgba($font-color-secondary, .6);
+    color: rgba($font-color-secondary, 0.6);
 
     @media (min-width: $tablet-width) {
       color: $font-color-item--active;

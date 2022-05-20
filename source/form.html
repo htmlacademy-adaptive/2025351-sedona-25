@@ -29,8 +29,7 @@
     </nav>
 
     <div class="main-header__hero">
-      <img class="main-header__title-img" src="img/header-title-text.svg" width="229" height="39"
-           alt="Заголовок Седона">
+      <img class="main-header__title-img" src="img/header-title-text.svg" width="229" height="39" alt="Заголовок Седона">
     </div>
   </header>
 
@@ -57,8 +56,7 @@
           </li>
           <li class="form-feedback__input-block">
             <label class="form-feedback__label" for="middlename">Отчество:</label>
-            <input class="form-feedback__input-text" type="text" name="middlename" placeholder="Александрович"
-                   id="middlename">
+            <input class="form-feedback__input-text" type="text" name="middlename" placeholder="Александрович" id="middlename">
           </li>
         </ul>
       </fieldset>
@@ -69,13 +67,11 @@
         <ul class="form-feedback__input-wrapper form-feedback__input-wrapper--contacts">
           <li class="form-feedback__input-block form-feedback__input-block--contacts form-feedback__input-block--phone">
             <label class="form-feedback__label form-feedback__label--contacts" for="phone">Контактный телефон*:</label>
-            <input class="form-feedback__input-text form-feedback__input-text--contacts" type="tel" name="phone"
-                   placeholder="Введите телефон" id="phone">
+            <input class="form-feedback__input-text form-feedback__input-text--contacts" type="tel" name="phone" placeholder="Введите телефон" id="phone">
           </li>
           <li class="form-feedback__input-block form-feedback__input-block--contacts form-feedback__input-block--email">
             <label class="form-feedback__label form-feedback__label--contacts" for="email">Электронная почта*:</label>
-            <input class="form-feedback__input-text form-feedback__input-text--contacts" type="email" name="email"
-                   placeholder="Введите e-mail" id="email">
+            <input class="form-feedback__input-text form-feedback__input-text--contacts" type="email" name="email" placeholder="Введите e-mail" id="email">
           </li>
         </ul>
       </fieldset>
@@ -87,8 +83,7 @@
 
         <ul class="form-feedback__input-wrapper form-feedback__input-wrapper--impression">
           <li class="form-feedback__input-block form-feedback__input-block--impression">
-            <input class="form-feedback__radio visually-hidden" type="radio" name="impression" value="1" id="positive"
-                   checked>
+            <input class="form-feedback__radio visually-hidden" type="radio" name="impression" value="1" id="positive" checked>
             <label class="form-feedback__label-radio" for="positive">Скорее положительное</label>
           </li>
           <li class="form-feedback__input-block form-feedback__input-block--impression">
@@ -132,7 +127,8 @@
           <span class="form-feedback__striked-text">Опишите свои эмоции:</span>
         </legend>
 
-        <textarea class="form-feedback__textarea form-feedback__input-text" name="message"
+        <label for="form-feedback__textarea" class="visually-hidden"></label>
+        <textarea class="form-feedback__textarea form-feedback__input-text" id="form-feedback__textarea" name="message"
                   placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
 

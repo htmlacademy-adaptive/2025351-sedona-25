@@ -26,11 +26,11 @@
   border: 0;
   border-top: 1px solid $border-color-photo;
 
-  @media (min-width:$tablet-width) {
-  padding-left: 0;
-  padding-right: 0;
-  border-top: none;
-}
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    border-top: none;
+  }
 
   &--name {
     @media (min-width: $tablet-width) {
@@ -306,8 +306,8 @@
     transform: rotate(-45deg);
     width: 22px;
     height: 16px;
-    border-left: 4px solid #333;
-    border-bottom: 4px solid #333;
+    border-left: 4px solid #333333;
+    border-bottom: 4px solid #333333;
   }
 
   &:hover::before {

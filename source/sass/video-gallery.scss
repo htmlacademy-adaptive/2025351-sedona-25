@@ -32,10 +32,10 @@
 }
 
 .video-gallery__play-button-icon {
-  fill: white;
-  fill-opacity: .7;
+  fill: $white;
+  fill-opacity: 0.7;
 
   :hover {
-    fill-opacity: .9;
+    fill-opacity: 0.9;
   }
 }
