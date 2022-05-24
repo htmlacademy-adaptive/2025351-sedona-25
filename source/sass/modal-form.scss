@@ -107,6 +107,10 @@
       padding-bottom: 52px;
     }
   }
+
+  &--success {
+    background-color: $bg-color-body;
+  }
 }
 
 .modal-form__button {
