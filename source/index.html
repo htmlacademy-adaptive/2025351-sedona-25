@@ -34,7 +34,7 @@
   </header>
 
   <main class="main-container">
-    <header class="main-container__header">
+    <header class="main-container__header main-container__header--index">
       <h1 class="main-container__header-title main-container__header-title--index">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="main-container__header-text main-container__header-text--index">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </header>
@@ -64,26 +64,29 @@
           <img class="city-feature__image" src="img/icon-house.svg" width="39" height="37" alt="Иконка жилье">
         </div>
         <h3 class="city-feature__title">Жилье</h3>
-        <p class="city-feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <p class="city-feature__description city-feature__description--hotel">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
       <div class="city-features__feature city-feature">
         <div class="city-feature__image-wrapper">
-          <img class="city-feature__image" src="img/icon-burger.svg" width="40" height="35" alt="Иконка еда">
+          <img class="city-feature__image city-feature__image--burger" src="img/icon-burger.svg" width="40" height="35" alt="Иконка еда">
         </div>
         <h3 class="city-feature__title">Еда</h3>
-        <p class="city-feature__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        <p class="city-feature__description city-feature__description--food">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
       </div>
       <div class="city-features__feature city-feature">
         <div class="city-feature__image-wrapper">
-          <img class="city-feature__image" src="img/icon-gift.svg" width="32" height="38" alt="Иконка сувенир">
+          <img class="city-feature__image " src="img/icon-gift.svg" width="32" height="38" alt="Иконка сувенир">
         </div>
         <h3 class="city-feature__title">Сувениры</h3>
-        <p class="city-feature__description">Не только китайского, но и местного производства!</p>
+        <p class="city-feature__description city-feature__description--souvenirs">
+          <span class="city-feature__description-first-line">Не только китайского,</span>
+          <span class="city-feature__description-second-line">но и местного производства!</span>
+        </p>
       </div>
     </section>
 
     <section class="sight sight--reverse">
-      <div class="sight__text sight-text sight-text--primary">
+      <div class="sight__text sight-text sight-text--primary sight-text--bridge">
         <h2 class="sight-text__title sight-text__title--primary">Там есть мост дьявола</h2>
         <p class="sight-text__number">— №2 —</p>
         <p class="sight-text__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -102,7 +105,7 @@
     </section>
 
     <section class="sight-group">
-      <div class="sight-text">
+      <div class="sight-text sight-text--square">
         <h2 class="sight-text__title">Небольшая площадь</h2>
         <p class="sight-text__number">— №3 —</p>
         <p class="sight-text__description">Все интересные места находятся очень близко</p>
@@ -124,12 +127,14 @@
     <section class="booking">
       <h2 class="visually-hidden">Забронировать гостиницу</h2>
       <p class="booking__title">Заинтересовались?</p>
-      <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-        седоне</p>
+      <p class="booking__text">
+        <span class="booking__text-first-line">Укажите предполагаемые даты поездки,</span>
+        <span class="booking__text-second-line">и мы покажем вам лучшие предложения гостиниц вседоне</span>
+      </p>
       <a class="button booking__find-btn" href="#">Найти гостиницу</a>
     </section>
 
-    <section class="map" id="map"></section>
+    <section class="main-container__map map" id="map"></section>
   </main>
 
   <footer class="footer-container">
@@ -145,16 +150,16 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <svg width="20" height="14" aria-label="Мы в Ютубе">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <svg width="22" height="18" aria-label="Мы в Телеграме">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <svg width="22" height="18" aria-label="Мы в Телеграме">
-              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="20" height="14" aria-label="Мы в Ютубе">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
