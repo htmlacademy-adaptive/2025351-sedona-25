@@ -39,6 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 300px;
     background-image: url("../img/bg-hero-desktop@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -86,6 +87,7 @@
   &--index {
     width: 282px;
     height: 214px;
+    margin-top: 0;
 
     @media (min-width: $tablet-width) {
       width: 460px;

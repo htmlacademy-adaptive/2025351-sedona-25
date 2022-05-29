@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    // padding-top: 20px;
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -40,6 +40,10 @@
       width: 320px;
       border-right: 1px solid #dbdbdb;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 493px;
+    }
   }
 
   &--contacts {
@@ -52,6 +56,10 @@
       width: 320px;
       display: flex;
       justify-content: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 458px;
     }
   }
 
@@ -69,9 +77,11 @@
       margin-top: 48px;
     }
 
-    //@media (min-width: $desktop-width) {
-    //  padding-bottom: 47px;
-    //}
+    @media (min-width: $desktop-width) {
+      padding-top: 57px;
+      padding-bottom: 70px;
+      margin: 54px 0 0;
+    }
   }
 
   &--achivments {
@@ -97,6 +107,10 @@
       padding-bottom: 0;
       width: 100%;
       min-height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 48px;
     }
   }
 }
@@ -128,6 +142,16 @@
     &--contacts {
       left: 26px;
       text-align: unset;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--name {
+      right: 166px;
+    }
+
+    &--contacts {
+      left: 90px;
     }
   }
 }
@@ -175,12 +199,19 @@
       // padding-right: 10%;
       width: 280px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 430px;
+    }
   }
 
   &--contacts {
     @media (min-width: $tablet-width) {
-      // padding-left: 26px;
       width: 280px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 395px;
     }
   }
 
@@ -195,7 +226,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 31px 44px 0;
+      padding: 31px 44px 15px;
+      justify-content: unset;
     }
   }
 
@@ -210,6 +242,7 @@
 
     @media (min-width: $desktop-width) {
       padding: 17px 53px 0;
+      justify-content: unset;
     }
   }
 }
@@ -272,6 +305,14 @@
         margin-bottom: 16px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &:not(:last-of-type) {
+        width: 280px;
+        margin-bottom: 0px;
+        margin-right: 27px;
+      }
+    }
   }
 
   &--achivments {
@@ -287,7 +328,13 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 203px;
+      // width: 203px;
+      width: fit-content;
+      margin-bottom: 0;
+
+      &:not(:last-of-type) {
+        margin-right: 63px;
+      }
     }
   }
 }
@@ -339,7 +386,7 @@
     position: absolute;
     display: none;
     left: 12px;
-    top: 17px;
+    top: 15px;
     transform: rotate(-45deg);
     width: 22px;
     height: 12px;
@@ -384,7 +431,12 @@
   @media (min-width: $tablet-width) {
     margin-right: auto;
     width: 280px;
+  }
 
+  @media (min-width: $desktop-width) {
+    &:last-of-type {
+      width: fit-content;
+    }
   }
 
   &::before {
@@ -465,7 +517,8 @@
 }
 
 .form-feedback__input-text::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, .3);
+  opacity: 1; // в Firefox без этого текст выглядит бледнее
 }
 
 .form-feedback__textarea {
@@ -510,6 +563,10 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
   }
 }
 
