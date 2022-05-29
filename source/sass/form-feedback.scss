@@ -309,7 +309,7 @@
     @media (min-width: $desktop-width) {
       &:not(:last-of-type) {
         width: 280px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         margin-right: 27px;
       }
     }
@@ -390,8 +390,8 @@
     transform: rotate(-45deg);
     width: 22px;
     height: 12px;
-    border-left: 4px solid #333;
-    border-bottom: 4px solid #333;
+    border-left: 4px solid #333333;
+    border-bottom: 4px solid #333333;
   }
 
   &:hover::before {
@@ -517,7 +517,7 @@
 }
 
 .form-feedback__input-text::placeholder {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.3);
   opacity: 1; // в Firefox без этого текст выглядит бледнее
 }
 
