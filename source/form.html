@@ -6,6 +6,10 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <title>HTML Academy: Седона - Оставьте отзыв</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 <body class="page__body">
 <div class="page-wrapper">
@@ -34,9 +38,9 @@
   </header>
 
   <main class="main-container">
-    <header class="main-container__header">
+    <header class="main-container__header main-container__header--form">
       <h1 class="main-container__header-title">Оставьте свой отзыв</h1>
-      <p class="main-container__header-text">
+      <p class="main-container__header-text main-container__header-text--form">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </header>
@@ -48,7 +52,7 @@
         <ul class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
           <li class="form-feedback__input-block">
             <label class="form-feedback__label" for="firstname">Имя*:</label>
-            <input class="form-feedback__input-text" type="text" name="firstname" placeholder="Петр" id="firstname">
+            <input class="form-feedback__input-text" type="text" name="firstname" placeholder="Пётр" id="firstname">
           </li>
           <li class="form-feedback__input-block">
             <label class="form-feedback__label" for="lastname">Фамилия*:</label>
@@ -103,7 +107,7 @@
         </legend>
 
         <ul class="form-feedback__input-wrapper form-feedback__input-wrapper--achivments">
-          <li class="form-feedback__input-block form-feedback__input-block--achivments">
+          <li class="form-feedback__input-block form-feedback__input-block--achivments form-feedback__input-block--second-line">
             <input class="form-feedback__checkbox visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
             <label class="form-feedback__label-checkbox" for="bridge">Мост Дьявола</label>
           </li>
@@ -153,16 +157,16 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <svg width="20" height="14" aria-label="Мы в Ютубе">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <svg width="22" height="18" aria-label="Мы в Телеграме">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <svg width="22" height="18" aria-label="Мы в Телеграме">
-              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="20" height="14" aria-label="Мы в Ютубе">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>

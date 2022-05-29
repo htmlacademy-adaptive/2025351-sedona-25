@@ -1,8 +1,13 @@
 .city-features {
-  padding: 23px 18px 52px;
+  padding: 23px 18px 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 57px 0 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
   }
 }

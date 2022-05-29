@@ -20,7 +20,7 @@
   }
 
   &:active {
-    color: fade($font-color-secondary, 30%);
+    color: rgba(255, 255, 255, 0.3);
     border-color: $bg-color-button--active;
     background-color: $bg-color-button--active;
   }

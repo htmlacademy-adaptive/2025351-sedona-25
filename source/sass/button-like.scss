@@ -17,6 +17,10 @@
   fill: $font-color-heading;
   fill-opacity: 0.3;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -7px;
+  }
+
   @media (min-width: $desktop-width) {
     fill: $font-color-secondary;
     fill-opacity: 1;

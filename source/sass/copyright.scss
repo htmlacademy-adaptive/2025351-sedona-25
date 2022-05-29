@@ -1,6 +1,6 @@
 .copyright__link {
   @include flex-center;
-  gap: 10px;
+  // gap: 10px;
 
   line-height: 12px;
 
@@ -19,4 +19,13 @@
 
 .copyright__link:active .copyright__icon {
   fill: $font-color-link--active;
+}
+
+.copyright__text {
+  width: 121px;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: -8px;
+  }
 }
